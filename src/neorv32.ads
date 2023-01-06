@@ -1,7 +1,7 @@
-with NeoRV32_SVD.LEDS;
+with NeoRV32_SVD.LEDS; use NeoRV32_SVD.LEDS;
 
-package NeoRV32 is
-
-   --  procedure Set_Leds(value : UInt8);
-
+package NeoRV32 with Preelaborate is
+   type Mod_Byte is mod 2**OUT_out_Field'Size with Size => 32;
+   procedure Set_Leds(Value : Mod_Byte);
+   --  Set the leds to be turned on
 end NeoRV32;

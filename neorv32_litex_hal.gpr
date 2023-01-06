@@ -18,7 +18,9 @@ project Neorv32_Litex_Hal is
    for Library_Kind use Library_Type;
 
    package Compiler is
-      for Default_Switches ("Ada") use Neorv32_Litex_Hal_Config.Ada_Compiler_Switches;
+      for Default_Switches ("Ada") use
+        Neorv32_Litex_Hal_Config.Ada_Compiler_Switches &
+        ("-gnat2022");
    end Compiler;
 
    package Binder is
