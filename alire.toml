@@ -1,0 +1,11 @@
+name = "neorv32_litex_hal"
+description = "Shiny new project"
+version = "0.1.0-dev"
+
+authors = ["Fernando Oleo Blanco"]
+maintainers = ["Fernando Oleo Blanco <irvise@irvise.xyz>"]
+maintainers-logins = ["Irvise"]
+[[depends-on]]
+gnat_riscv_elf = "*"
+[[depends-on]]
+hal = "~0.3.0"
